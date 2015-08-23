@@ -68,31 +68,35 @@
     		</div>
     		<div class="col-md-8">
 
-            <!-- vertrek en bestemming invoer -->
-            <div class="routeInput">
-              <div class="form-group form-inline">
-                <label for="origin">Vertrekpunt</label>
-                <input type="text" name="origin" id="origin" placeholder="van" class="form-control">
-                <label for="destination">Bestemming</label>
-                <input type="text" name="destination" id="destination" placeholder="naar" class="form-control">
+          <!-- vertrek en bestemming invoer -->
+          <div class="routeInput">
+            <div class="form-group form-inline">
+              <label for="origin">Vertrekpunt</label>
+              <input type="text" name="origin" id="origin" placeholder="van" class="form-control">
+              <label for="destination">Bestemming</label>
+              <input type="text" name="destination" id="destination" placeholder="naar" class="form-control">
 
-                <!-- dropdown voor mode of transportation opties -->
-                <button type="button" class="btn btn-default btn-md">
-                  <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Fietsen
-                </button>
-                <button type="button" class="btn btn-default btn-md">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lopen
-                </button>
-
-              </div>
+              <!-- dropdown voor mode of transportation opties -->
+              <button type="button" class="btn btn-default btn-md" id="fietsen">
+                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Fietsen
+              </button>
+              <button type="button" class="btn btn-default btn-md" id="lopen">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Lopen
+              </button>
 
             </div>
 
+          </div>
 
 
-          <!-- insert google map by callback google script -->
-            <div id="map" class="col-md-12"></div>
-          <!--  -->
+
+        <!-- insert google map by callback google script -->
+          <div id="map" class="col-md-12"></div>
+        <!--  -->
+          <div class="chart">
+            <div style="width: 40px;">4</div>
+            <div style="width: 80px;">8</div>
+          </div>
 
     			<p>
     				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
@@ -119,8 +123,11 @@
     <script src="/js/dependencies/sails.io.js"></script>
     <script src="/js/dependencies/jquery-2.1.4.min.js"></script>
     <script src="/js/dependencies/bootstrap.js"></script>
+    <script src="/js/dependencies/d3.js"></script>
     <script src="/js/dependencies/lodash.min.js"></script>
     <script src="/js/google_map.js"></script>
+    <script src="/js/listeners.js"></script>
+    <script src="/js/regen.js"></script>
     <!--SCRIPTS END-->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRv29T6CvA_ALLnA2FRO9FPx6WJOxUi3o&callback=initMap"></script>
   </body>
