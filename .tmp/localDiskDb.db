@@ -1,0 +1,41 @@
+{
+  "data": {
+    "route": [
+      {
+        "origin": "amsterdam",
+        "destination": "amstelveen",
+        "createdAt": "2015-08-23T10:54:01.269Z",
+        "updatedAt": "2015-08-23T10:54:01.269Z",
+        "id": 1
+      },
+      {
+        "origin": "rotterdam",
+        "destination": "zaanstad",
+        "createdAt": "2015-08-23T13:41:16.681Z",
+        "updatedAt": "2015-08-23T13:41:16.681Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "route": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "route": {
+      "id": 2
+    }
+  }
+}
