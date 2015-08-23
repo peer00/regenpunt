@@ -44,6 +44,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'GET /listAll': 'RouteController.find'
+  'GET /listAll': 'RouteController.find',
+  "GET /bla": "RouteController.bla"
 
 };

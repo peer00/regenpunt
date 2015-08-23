@@ -6,6 +6,7 @@
  */
 
 module.exports = {
-	
+	bla: function(req, res) {
+	res.redirect('/');
+}
 };
-
